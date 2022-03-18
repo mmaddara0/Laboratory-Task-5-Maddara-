@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--primary-color);
+  font-family: arial;
+  padding: 7.5px;
+}
+
+.header {
+  background: var(--secondary-color);
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  color: var(--font-color);
+}
+
+nav{
+  background: var(--tertiary-color);
+  padding: 10px;
+}
+
+.code{
+  text-decoration: none;
+  color: white;
+  padding-right: 20px;
+}
+
+#CPE3{
+  float: right;
+  color: white;
+}
+
+main {
+  float: left;
+  width: 75%;
+  color: var(--font-color);
+}
+
+.desc {
+  text-align: justify;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+  color: var(--font-color);
+}
+
+.card {
+   background-color: var(--secondary-color);
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.banner {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border: 0.5px solid #555;
+}
+
+.side {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border: 0.5px solid #555;
+}
+
+.caption {
+  text-align: center;
+}
+
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background: var(--tertiary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#icon {
+  width: 25px;
+  cursor: pointer;
+  float: left;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+:root {
+	--primary-color: #e7e7e7;
+	--secondary-color: white;
+	--tertiary-color: #204656;
+  --font-color: black;
+}
+
+.dark-theme {
+  --primary-color: #2c2c2c;
+  --secondary-color: #676767;
+  --tertiary-color: #204656;
+  --font-color: white;
+}
